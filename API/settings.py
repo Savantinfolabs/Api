@@ -153,3 +153,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+heroku config:set SECRET_KEY="someSortOfKey"
+django_heroku.settings(locals())
